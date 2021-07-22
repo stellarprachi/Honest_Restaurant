@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HONEST | RESTAURANT</title>
+
+    <!-- aos css cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/../restaurant-style.css">
+    
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+
+    <div id="menu-bar" class="fas fa-hamburger"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="restaurant-index.html">Home</a></li>
+            <li><a href="placeorder.html">Place Order</a></li>
+            <li><a id="myBtn" style="cursor: pointer;">Login</a></li>
+            <li><a href=""><i class="fas fa-shopping-cart" style="color: black;"></i></a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- fixed meal section for indian main course starts  -->
+
+<section class="fixed" id="fixed">
+<br>
+    <h1 class="heading"> Indian Main Course </h1><br>
+
+    <!-- soup starts -->
+    <h1 class="heading">Soup</h1>
+
+    <div class="box-container">
+        
+        <div class="box" data-aos="fade-right">
+            <img src="https://thumbs.dreamstime.com/b/bowl-delicious-fresh-homemade-tomato-soup-table-space-text-136213735.jpg" alt="">
+            <h3>Tomato Cheese Soup</h3>
+            <div class="price">Rs. 115</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+        <div class="box" data-aos="fade-left">
+            <img src="https://thumbs.dreamstime.com/b/italian-minestrone-soup-bowl-gray-stone-background-top-view-copy-space-104427814.jpg" alt="">
+            <h3>Minestrone Soup</h3>
+            <div class="price">Rs. 110</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <img src="https://recipesofhome.com/wp-content/uploads/2020/03/hot-and-sour-soup-recipe.jpg" alt="">
+            <h3>Hot & Sour Soup</h3>
+            <div class="price">Rs. 120</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <img src="https://mlnzdsbaze8y.i.optimole.com/-PJ69xU.tuoa~e296/w:800/h:586/q:90/https://www.sagarexecutive.in/wp-content/uploads/2020/07/sweet-corn-soup.jpg" alt="">
+            <h3>Sweet Corn Soup</h3>
+            <div class="price">Rs. 115</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <img src="https://cdn-0.sanjeevkapoor.com/UploadFiles/FestivalImages/Why-Manchow-soup-is-better-than-pakoras-during-monsoon.JPG" alt="">
+            <h3>Veg. Manchow Soup</h3>
+            <div class="price">Rs. 115</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+    </div>
+    <!-- soup ends -->
+    
+    <!-- Starter starts -->
+    <h1 class="heading">Starter</h1>
+
+    <div class="box-container">
+        
+        <div class="box" data-aos="fade-right">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhMVFRUWFhUVFRUVFxUYGBUVFRUWFxUVFhcYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLi0BCgoKDg0OGhAQGy0lICUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBAMBAAAAAAAAAAAAAAAFAAMEBgECBwj/xAA7EAABAwIEAwUFCAEFAAMAAAABAAIDBBEFEiExBkFREyJhcYEHMkKRoSNSYrHB0eHwFBUzQ3LxJFOy/8QAGgEAAgMBAQAAAAAAAAAAAAAAAwQAAQIFBv/EADIRAAEDAwMBBgUDBQEAAAAAAAEAAhEDITEEEkFREyJhcaHwMoGRscEU0eEFI0Ji8VL/2gAMAwEAAhEDEQA/AOLpLCS0qSWUklaiSScp4HPcGtFyUfbg7Yhd+ruiqbwrA5QKKne7ZpKlx4RKfhKvfAWFxTlzpCGhptl/dWrE30sLS1oF+SK2nuErDnAGFx9+EOb710xUUeTdXqurGP0DQUExOmL7aWWKhpt/yC2xr3f4quR09yjUHCcrxduqapcNcHgnbdXvCuJoom5ch0HRK1K0fCUw2jOQud4hgcsPviyH9kVduLcbNQMrGW8bKouDhuESm8kSUJ7ADZRnNI3CxdHqfIQBIN+aiYthXZ99urT9EWQsFpCGXWVqldWsra6wkFhRRZSWVhWospKXh+FzTnLFG53kNPmuh8N+yWaSzpzlH3R+pVhpKqVzJjCTYAk9BqjNDwrWS+7C63U6L0FgfAFJTgWjF+tlZY6GNgsGhX3QovN8Ps4rTu0D5p13szrB935Fei3NHQJmSyu3RReb5+AKxvwgoXU8NVUe8R9F6Zmt0CgTU7Du0KoWoXmOWle33mOHmCml6SqcEgfuwfJAa/gKlk+EBVCkFcKWV0/EPZgP+N5H1VZxDgSqj2AcPkpCohVVJEHYLUjTsnfJYUgqIUkkkhq0kllJWorRwnTD/cRasiuTzJQ/gWYXLTrzsr47CYn95pyu6cj6IRa+HFlz06ozXM7rXfVU2mhLTcOLfI2+aelIOpJPmm8YY8PI6dNlCp6mw7yQL3kHfbwXVZQYLtEqVHVtB6JueqvsoFW7XTZKEgLOwZRIiy3/AMxwOqcZVZitHx3TLG5TZXAVEKfHWAnKQpZgiI1AQVxA15reCUk6rJaRdpIVbGkXCnYlhQtmZsplFhzpKd1wbAHVPU9RoA4G3iLIxWYsxtK5jbDSy22q8DvJSpTaD3VyiZtnEdCQtVmQ3J81ququYsrKOYFwlVVRGRha37zhb5BdT4a9lkEQD5zncOuw9FsMJVSuS4Pw7UVJAjYbfeOgXSOHPZcwWdOcx6cvkr62ro6fuNLRbyQyv4shGzwqL6beURtNzuFYcKwqmp291rRbwUHEeMmsJbE3NbS+wVPxLihzxlYdCh0VVoufqNaZin9U5R0Yy9WocdTsJzRgjwOv1Tb/AGlOJ0iPzCrE07Sm2Rtslv1lYc/ZMfpaJ49VdqXj+N2j2lvn/CJs4lgeLh4+a5kaa+tlLo6K+pFkRn9QfggLD9FTyCV0Ztex/uuBSMipkMzYgsQYrJm0OnimWa9h+IJd2kcMK4l61L0CZjzRo5SosUjds4JltWm/BQTTe3IREvWrnAqP2oOxWpkRCFkFb9kz7o+SSb7RJS6tebEkkkJDWUlhJRRFMBq+zkF+a6BSYudBcOH1XK7ojh+IOabXStZjwd9Mx1HCc072OHZ1B5Hor9iD45PhIKHS4Mwi4dZYwnExms/UeKlPqWGTQaLmVdQ8vuI+y61PT7BAP7qD/ohdoHBMVGGFndLgj9Kxrje9kxNCx8lswWP1N8+iJ2ZQSKjLj72yd/wG8nInSYaHF3eCfno4WMN33K0NS2Y/Cy5hQqjpISbON0VYYovcjzFDYJmAjTRE5MUjj0ABPgtv1Lg7uBDNGR3lpK90hu+zAOQVbxvER/tx63001urHDgVTWOuAY2Hmd7eSteE8LUdE3O8Z39TqU5RpOd/crGAElXeG/wBunclc0wPgaqqLOcOyZ1dufILpPDns+pIbOeQ9w5nVOVVXLObDuM6D9Ssx0Bb8RHqUQ/1GmD3BI6oA0To7xg9FbI6iGEWaAAEBx/iYv+ziPm7oh9RFmGUk2UH/AAANGFDra5z2wy0olLTNaZff7KDNHm0JumW4Mb35KdJQvbrupAqTlDbWXM2uC6PaDhDm0OQ3WswB20RLsiUxUR8lW5wU7rsoQ9luamQOtuFnsea1cei0KgVFnRPf5OXSymx1QIsEPZrumJAG87FE3BDLCpUxcTdKCQ7KMKhxGiZ/yyDYiyojorBOCnay5K3gBuDssxOvup1xaystnKvet48Rc3YqbT41catPmogjboFLjhaNtkxSrPp2BS1Smx2Qpra9p5rKj9kzwWUx+uf/AOUH9M3quBJLCynUgkkkkookkCkkoVEToqvkUTjlPVVi6m01aRoUlVochdXTay216sLKtw5rH+Q691AjqAeacEiUNOOF0g8FTI65wBAO6aklJ8UcwDg6pqiCGljPvOH5BdR4c9n1PT2c4Z39Xa/Lomaejc68QPFK1tZTp2yeg/fC5hg3CVVVWIaWM+879Ar5hXBkFMMz++/q7VXt7GsFgAAqrjdaNQCE52NOi3d91zjqalZ0YHQe7qPWYk1mjbDkhk1QHute5QmocXE8yFmkiIdmL2jw308eS4uorPrW4XRo0mUhJyjsLg1KepQqTEIL+853rYXUgyRuPdzeRtb0KCGbRkfVUHh5O26T5rlbBgOoWZqB3vMF2/Ueajva9mpBA2vy+a20EZVmHCxTxnPJJ2V+9geqhyHmFp2nRGa6yCWp+Vjm7HMPBD5KjXVTfdF/oskNduz1ULZVgwoJlW0TL6p9+Hg7aJv/ABns5XHggmndEFSyT4jZDnsublEDUXFtk09gsoWwtNfOU089NFqJWkai6ak0TUbtdlQK1tlE2QNcAQbeC1npJN26puOa2pUylqiT6ooehlihtqSNDp4FEqSvabdE7U0bZmkWseRVZLnRPyu/9UIsqAlW/tgkg8NVdoSQe1KJ2QXILJJLK9EuAsJJLKiiwtrLVbKitBa2WwCPcOcJVVaR2UZDecjrhvp1XXeF/ZhTU1nzfayDm7YHwCoMLlvcAuWcM8E1dYQWtMcf33AjTwHNdf4X9ntNS2c/7WT7ztbeQ5K1Na1gs0AAdFHmqwEUMa1VucbBEY3NaLNACbqcRZGLvcGjxKrOK46Yx3dTy/lUqqqpJn3ldmtqOg8glNR/UKdIwLlMUNC+pc2CsWO4/JO4iM2jGgtu7x8kKhhJB3JAvumoToiUbRdrRcXbmd1IO31uuUazqrtziuh2babdrQgNQXsbnewhjtAARcHYk638L7fRMZ3kksALddxoAfC2qL1VLcuOdob0J1uOVvkd+SBPxF0ZuW7Xszn4OuN/yQQ4uKOIja25OU/2bXNvkAeORuNR6beilROkYACwtabZrD3tNe9zCgRV76po74EkZvY65gd7HS2w6qXR4icti4i1wQQDlPMHY2VtZBh0/kIeoe0NBiHTBH2wPfqpn+eAx8YkcA6xFxqLG5B68uinSYu5kBPZPkyixAGrhbfKdx5XQGoxJwe1jQx2Y72GnW2i2/1Zzrkn3XEOA8Dl6f3RWW7IgGMdOqX3modoPj+EfgpmVEYlgNiRfLyvzb+E306eSAioIcbgjWxB3BG4I5JtmIvMgLXuLgW5W7N0AuXD4iRZFOK2BskT7WL2HN4lrtCfGxb8lbSTI6Ijg1jg2ZMX8MrVs17KZE++hQWOeynRnndFBWS1TZLDUnyWBG9217JiM3N3agIhDUN2BspMrMQmHUAeO8NfBQZ8Kkbq3vD6qZDiDTJkvYdVtUYs1jsrCX+WqxvRAx0qvVLLGx0KxDDoj0lRHMLPb621CHSYZKy+XvN5W3WTBwttJblQZrbKRQ/RQZLgkHQ9CrBh9MDHH+I3PkFTcorjZSaqcxsuAb/l4qo47Ul7QbgkO5bi/JXnEXtaNeipszGGTujfdND4gClQ6xITVJU2Y0eCSfdQeCS3+mHVY/Unp6rmCSSS6i5KyksxsLiAASSbAAEknoAN10zg32WPlyy1t2M3EQ953/Y/D5BWBKiomB4FUVb8lPGXnmdmt/7O5LsHCfsmhitJVHtX75fgB8ufqr9hWGQ07BHCxrGjYNFlMMiIGhRKCmZG0NY0NA2A0UWurGs3Op2A1J9EqusawFzjYBUSvx4veXtYXchYE2A2GyW1Wp7JvdiSj6ej2hvgKyy4jpc2HrdCqusJ1GyBxcRRh2WUZORJFnN8SOY+qOYjDeB+vey3aQRfTUWJ01C541VRze8fmnOxa11gqnjlWWvB5HRDm1jWi17FNVYeCSe08y0H6NJP0UTtndQR6H5pY0muvKdFRwAEKyYQc+ZxBAAaW7gEuJsR1GhRuCX7Ua3zRAg2tex6eV0AwnHGvDYpLNIGVpOxHIX5KxR0TSGnMbsuQ642Jvl8QNPkhP7hhZMuF0LxqmDIxJbVrhm3Ac29nettb+CruVk0XaAgFrspZYkkBubQAEm/h0PPQ3yspc7cr2Z2n++n8oJPwxGXZ4SYiLd0NHZmwI1aACCb73Pko0ACOVlnxh0+/wDiAYph7Kepc9xyMe0uicy5bmI1AA3ANzboQFCllJbJ2JzPeG5ugGxdfYGwsjOLtlbE5kkZIu25b3m2BB3G2oHRDcIiztdmBDXHQDTNbSwKjHu2S/j8e5810jp2kWdJIi0Tg4W+F4RK6xka4nW2QgW/Fry3GvUJHDZo5QzvBsj9A7QuLRvYbi7jrzKs9CJr2DLbe8CN+dtzvurRh2BtY4zzWc4DK3wHQdNzt1WmPe+Z/hI1GU6DgQPWSfwg/C+AEOD3sLWtvfPfM4/hHwjTnr+a04xw4TSDvZS0HL01Iv8AkFbybHujkN+llVeISXTHlYAfr+qMQGMgJTcXVNxVLqsMmiNy0uHVuqcpqu7gDsrfSF2X903WYNHLqBld1as5C3uVcrq7KNPJRIawk3G3UrTFcPfE60nu8ncj/KHx1BPd6aDyVEWKOyLBWfC6dhJPvF3X9FKoKAOe5h7gFyLdfNCMLqXN8lasFjLyXX33/hVSaHvAUqktaSgWJwOpXh3vNJy+d0WbXR00bZHXJeBZm59VKx7Cs0Z1BFwQ3rboq1iczSwE8tB6JtujaHSbD3ylXagubAQ3H8ZbJIHBuU6ghKLEjZozWsPyVf4hab5h1v5LfDc0ltNhusv07SZBsVtlctbEXCsdbirpSADysSpeC4W6VwawXPM9FrgGBvneGtGnMrpcrqXCKbtJbX2a0e893QD9U1S0wP79UpV1EJUfBTQxocdbarK5bXe0evfI57ZGxtJ0YBcNHS/NJP8AZNSXav6rlqkUFG+aRsUbS57zZoHM/oPFRwuweyXh8Rw/5bx35biO/wAMYNrjxcRfyAQxlWjnA3A8NE0SPAknI1edmfhYOXnzV1EtkPM1k26pRsKwEUNQodZXZRYEZjt+6gvq1XcVxBziWtBBJ325aAJDXazsGQMlN6TSms+OERr542kGV2YnYG7vKw1HJaVmJZG5gMwte41sPHXRAu1kcbG+gsHk7a7Hqt53OELgS05uZsPla3ovPPqvqe+F2TpRTgZKIsxyCUdnIzN1zMJt46i3yKIvYGsaI9WAWAGvctoB4AbLnlPiwa4NeALEm7vdvax1vbbqpOF8cxxy9k5rnRE6PZd2Q87Ntq3nptY2ujU6dWSGgkJRxiNwj6q3T4RHIzM2x325HoR1Vbr8ANwQbEfUcwrXR1IDyWEW2cBzHiORW2J0mZudnPl49FYcAJCJ3g6D6rltdGYnWI2V7wisDmB176BV/H6QuBzCx/VCOHsWML+yce4TuNC09R4XVuaajJGQixtMHn7rqUM1tipTZWG2Zo6ILT1IIFj5LYSEfwliVnZJR17Iz8IWXU8dvcbqegv0+aDCutoRf9FOjqgeYHP5IzKpKw6kQiUAtoLWC0mAJ1N/70TUE4+f1UiPKSeRG2+n91TDYNj6ygOsU7IcrdrbfX+hVSvOaV5P4f8A8hWR7i7Q+X8qsYoCJ3a2vbT0WqkyssAK3Y9PsfbmoNO/WyzPMGn+6IczdE2cIpUUzJ4y14BB6rmuL4FJDJZgLgTp+yvUNbcJ+Nmci/p4eS0CrA2qi8P3e/K42A3R1mJOjmyRm43JUTiqGKAgsNnnkDuOpCE4bWOuXWvb526LYJZgconxifBEeIceLiTcgbW8OQCrQqnEZRzWMQc6V9zoL6NCm0GH21KZbc3KUeSBAWIoLix16+KsfDfDklQ4Boszmf0CI8McMOqHAkWZ+f8ACtnE3ElNhEQijAfUOb3Y/uj78nRvhufmU4ylvjokn1dmMp7FMRpcHpwXAOlI+zjHvPPU9G9SuJ49jU1ZKZp3ZnHYfCxv3WjkE3i2JS1Mrppnl73bk8ujWjkB0UJONAAslJm5WUlhJWoqzdek8LhEdNAxvutijA8gwLzYF3v2aYw2somxk/awARvHMtAtG8eBaAPNpSm7aQUwy8hFJ6myHzVyI1dF1BQWqoTyK1ULuERganKav72p5G3nyQ6qnDpDa4Ayk6cunrZavge03sDbXdZjgGazi4B1jccyNrn1K4mtDiQSF0dLU2PEG3K2/wAsXaSDYWzbfXXTb90Lx6K/eY8aAd297aa2/hEqqn7MgX0PrZQJOzMgaWg2GvgL2ubaE25eHiufTkOwuqdsbmuKGU7WuaQGkgAXu0+YB8yN0JnhZH323a8EOYLEglutvVX6upCBq6wygxyC9nNtqHW9Cq02mb2hc/UOaNSXEHe5F+oDU0ytAJP0/HseHKF25qu2R8+i3peISWgyRlkmXRzToDyv+HY2Vy4Txd0kYbMQDfI47A3HcePE7W6g+AVBha95JALWX7hdzaNL2PkjeB90PAdnY8abbg9R4j6lYeGMuLe8SnKlAVaYEyflPj7/AHVox3BiQbefn5eOi5RjMXZyZuX6c13aOO8XaG+rMxvubC+3VcW4pjTNJu0zwVxy8kEHIR3Aaw2AvcclZYnghc8wCos1vlb5K50c9x4pOrT2vITTXbmgqfMOiVExx1On8pps4upbZQNtkPChwnGPc06a+tlOGK5d9763IHLdQamoYbZQRYa+fJM1LS4Aix306pgPc3lAdByEbGLRjQ6E7+Gm/wDeiquPVIFQQNgG/knaSGzrk629PoqtjtcDORc3b3TfqEbvPOENrWtuj8NWCdOaxMSfLmq9R1Wu6Nx1FwhOkZR2i6fgflRJ1d2cL5NLAWF+ROiENt/fJRMeqzkbGNvecOp2aD9StUDLlmu0bVU8Tlc+Zzxc36p+ileOSmx01+SmQ0ewAuTsBzXTNNkQVz+0dNim6Sk+JyuvC3CTpyHyCzNwDz8/2RPhHg4m0kw8Q3kP5UXjn2iR0wdS0JDpRdr5hYtiOxDOTnjrsD1NwD0aE3I9+P7JetX4CIcacZQ4az/Hpg19TbbdsVxo5/V3MN9TYb8Tq6l8r3SSOL3uOZznakk8ympJC4lziSSSSSSSSdSSTqSTzWLp8ADCSJWUrrF1qXKKLa6SazpLKtV1EsExeakmbPA8se35OB3a4fE09P1AQxZS6IvQnB/HtNiAEUloag/8ZOjz1icd/wDqdfPdHK7Cr7LzC1y6dwV7U5IcsNdmki0DZhrIwbd//wCxvj73/ZZEtxjoiBwOVbK+he3lcKAZQ5pYdDfu3/L+9V0CAw1MYlhe17HC7XMIIP8AeiCYtw8HajQ/eH6odWl2rCGo9OpsIJVGrq/sHta7vNJHev7gJs4n0vp4LSaJolErHZg85SQbg32t4XtqpmM4Y5pHaMuL6kc/I20WCIcrcrbAHRo1IO+tttbrimnsOII+y6/bbmi8gqeKr/4rxcAxBxbm217wvfle4VarcvZ5jcN0GVty0fr/AOKc+R0jnWBDLdmQfiB3FvUaqNiDjHTmOmiByuuQ65sCS8hovqbn5aKSNwH/ACPNALCfLmE9RRsliBtdpFrEa22sncGw8A9nmJy3a0XFhc5iLD4jp/ShdNTWcx7iXvkc2waXtZl0cQ0DQDKCdd7W5q/4DhkQ+2Zdrd3WvrbTe/TTTRBe0k7Wmx9Pd7rpPqOpU756/ZGsXqjFQtvYPcxrB5kAE/K64rxLOFZuNeJ3TyZYvdYMoPLxt181Rqimc43cST4rssoOPeOFwjViQMp/h2XQt6G/oVb6Covz1VHpWGN1+XNWCln2IS+pp96eqb01Tux0Vn7Qb3RCklBGqrrKnTkfnotoayxuue6mmpkK1Oawj7v96JpkjWnfXa37eCHtnzt3TQabg39VQnkIZaDyp0YI1PO+36rn3EBcaiR41BIP0AVsr6rI3fe6GtpM4z297X05J/RMLnHyS+os0earsFTbfRGqSsPmlNhw6JqOgtsi1qANlmnXLcorDVkqMWGSQnlew8baJymoSdyjWG4U6RwZGPM9P5QaNIsct16oc1RqOiLiGsFyeX7roXDXCrIh201rgXJdoGganfYKbheDwUURmmc1rWjM97zoPPx8Fynj/wBoMlcTDDeOlHLZ01vik6N6M9TrYN7FOicu9/z6dVyatbgIt7QPaP2odS0Li2L3XzC4dJ1bGfhZ+Lc8rDfmYCwUrpqISqzdILVIlSVaRKakelI9RJXrBKtb9qsqJmSWZW1BWUgESqMFlZGZSGlrXBrw1wLo3HYPA2PLz0QS4AgE5Ww1xBIGENWyl1+Gyw5DI23aNzt1B08bbHb5hQwoHBwkGQqc0tMEQjnDPFNTQPzwPsCe/G7WN/8A2b18RYrufB/HlLiADL9lPbWF536mN2zx9fBecVNoKV77uaQ1rLEyOdlDST3dd81xpbXRZdAubLTScBeoKvD2uG3odlUsW4W1LoiWHmOR/ZVPAPaPVUTmwV47ZlmlsjSHSBh2dm2kbpzsfNdUwjGKatjzwSNkbzt7zT0c06tPmqcGVW9+46ozS5h7vzB/ZcyrY5IPeYQQNxsddNfVT+HZ4ntyubkNyCDezr/Fmt481fqvDQ7kHDoUOiwiDUhoB8Nko7QndLCPn7j0TI1TSwhzb9Qq27AA2fOTYWtqdGjc5el9PkE5jFUXRiGIFkYFuhcBy8ArK+jbayiy4eEzptEymdxufQJerqnVIC55Nh3goclGRyXQKjDBudFBmw0WvY28imHwMn318vFYZJwFRn0gPJRTC5m23RXSXCL6hQ5cHKXfTBEnCMx0G2UAhrAR4p4TqVUcPFx0Fj1vZQHYNKNjfzSh084v/OE2K8fEETpa8bKWa2wPNA2YfP8AdB9SnhRVH3QPMoR0r+At9uw5T1TeWRjeROvlufoi73AaBCKDC5Q8PkcNL2AudxbX5o8ynTenHZsI5S1Z29wPChdndONgU7srI9gHDD5iHPFm9OqvaXFDLg0XQjA8DkqHAAEN5n9lfpH0mF05lmcGtGg5ue7k1g5uP8nTVNcQ8QUmFQgv70hH2cLbZnkc/wALRzcfqdFwfiTiGor5jNO6+4YwaMjb91g+VzufknKVANEn35dB4pKrWLrIjxrxpPiMne7kLT9nCDoPxvPxP8dhsOZNauksXR0FZWVqkorWyae9Jz1GlkWSVFiSRRnvSe9NkrBWgFm6S1uksq1mgqOzkZIRfI9r7dcrgbfRWqukbHh0j8paaucuDSblrQ/MATz9zf8AEqYjbccvAyGSJknZEmJzi7u3N7OaDZ48DpoN0rXpFxa5ouCPoJP3TVCqGtc0mJBjzNvsjL8NM8UHaZi2GOOMhpAOeU5yC4ghjWRlhJI8FAfgkLQ6TO+SJ0whgDC0OkN7FxcQQANRtqRyUeh4gLY5IpY2ztkf2js5cDn0u67fIdFZOHsQc6NhmawRMc+RrmxgNhbHyzE2BubAAFxve6Tf21FpJNp4PW5jkXngRNuIcZ2NdwjMc38BPGI84vzNT4hoGU87oWOLgzKC51tXFocbAbDW3oivC80T2Po6gFrZi10b9rP2GvmNOW45oVjOJmokLy0NGZxAAt7xGrjuXWDflpYJ/wD1q4iL4WOfE1rI3Xc0WYbszsGjrHyumXse6kGkX6yAQRg/X0SrHsbVLhjpEgg2I+nr0Uug4dklq3U73G0Wj3jk0D7MNvtcWsOQv0UqCjZFG2qo6iZjhOIcxsLgu3aGauGxsd+gW3C1a+1ZVSOLi2MuIJIBkkv029wDTYFA6vFnObHHGOyjiJLGtJJzHd7nHUu1PSyH/edUgH4YmMYk/cWiw9SnsW090Z3R1zA58+bldnoeOHRvjhmtL2heyJ7LZnZGjM6S1mgZsw7o6eKOUOKxubEyFsbsxfnDDcMIJu299Haak7W2XDIOK5GCANjj+xbkvbvPba2W/wAPI6cx6LePjGoZ/thkf2pk7mgsRYxkcwdSSdSTyVMbqGkTxzbrf6gDHn4LbqmnIP2g9LfQk/Lwue2xVLjGH2F3ydnG0Xsdtbnktopnl72Ot3LAkXFyfC+io3C/G7ai0ckT2OjLXMfG4uDQ54Fsobfd1yQPUK/cPRxyMMmYPLnuNg64GpGtiSTvuTv1RaVarvax5uM3HTnx3ER4ACcrFSnS2OewZmLHraJ/1BnxNxhNVLCQADazgdRcG3JDpJe9I7lfICeV73057I/VYVdwexxBAI5HQ+fNDp8PAbl1Fje/MnqeqNWZUeZZaLi+TBAtgRJPGBfkDoVGMADznwxeT5zAx4/OI7uAMGpDS4k9NTsmJDfLpqd/09FLfTi+bMb2sdtf2TUkQuCCRb106aob6VWC1tmiABI+EFuPGARc5JyIRWVKUhx+K5Jg5IPpJsor2d63QC6bewX2Hmn3tAJIJ138Uw91uayG1Wzx3p4NgbDy226+QutF1N3jaOcnJ85v0+dlo6MJt7QsSVACZjzyGzGl3kNPmtvcShtC1kICk4bE+U5WNJN/7dGMI4OllIMug6BW6Y0eGwmSZzI2DmdyegG7j4BXSouJuh1K7QIUHAuFGts+XU/QILxv7TIaQOp6PLLONC7eOI+JHvu/CNOp5Kj8ce1CeszQ02aCn2JBtJIPxEe4PAep5Ln7SnWsa3x8OP5+3mknPLlNxCvlnkdLM90kjjdznG5Ph4DoBoEwFqCkCtSsLdZBWt1tELkDqQFFErrRzlLkykWt018xyNr/ADJvqhkjvEKjZXCxLIoz3raQ+ITLlgrULIaTci2niAfQE3PomitiPELWypaSSSSVKJlZCyksqLYLa+luW9uV+tkklStZskkkqVrCSSSgUSSSSUUWwcRsSPJT8HxmeldngkdGeYB7p827FJJXKi6fw57XhoytitsO0j1Hq3cel10vDsRgqWB8brg66tI/MJJKzYSFsGcrabCo3eHkoUvD4OziEkkRZTDuFyf+QrLODwd3kpJKbApvKn03CEDdS2/nqiT46amaXOs1o1Nmk/kFlJaYwFwCG5xjK51xN7ZoWXjoIi9wuO1kBawHwb7zvWy5LjON1FXJ2tRK6R3K+zR0a3Zo8kkkR/dcWDAJHn5n8Y8FkDlQmpxqSSGqTgKyCkkrUWCVq56SSisLWard/wCAeqhl3z5JJLBK0myVoSkksq1hIlJJQqJXSSSVKL//2Q==" alt="">
+            <h3>Veg. Spring Rolls</h3>
+            <div class="price">Rs. 225</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+        <div class="box" data-aos="fade-left">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/a8/f3/d2/tandoori-paneer-tikka.jpg" alt="">
+            <h3>Paneer Tikka Dry</h3>
+            <div class="price">Rs. 240</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <img src="https://i.pinimg.com/originals/b7/93/f0/b793f065385e9611847fc3206d4ac25b.jpg" alt="">
+            <h3>Veg. Lolipop</h3>
+            <div class="price">Rs. 220</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+    </div>
+    <!-- Starter ends -->
+
+    <!-- Red Gravy Sabji starts -->
+    <h1 class="heading">Red Gravy Sabji</h1>
+
+    <div class="box-container">
+        
+        <div class="box" data-aos="fade-right">
+            <img src="https://madscookhouse.com/wp-content/uploads/2020/10/Paneer-Butter-Masala-Nut-Free.jpg" alt="">
+            <h3>Cheese Butter Masala</h3>
+            <div class="price">Rs. 255</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+        <div class="box" data-aos="fade-left">
+            <img src="https://images1.livehindustan.com/uploadimage/library/2020/08/02/16_9/16_9_6/paneer_angara_1596378201.jpg" alt="">
+            <h3>Paneer Angara</h3>
+            <div class="price">Rs. 265</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <img src="https://aplateofhappiness.files.wordpress.com/2018/10/img_1430.jpg" alt="">
+            <h3>Paneer Lababdar</h3>
+            <div class="price">Rs. 250</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+
+        <div class="box" data-aos="fade-right">
+            <img src="https://i.pinimg.com/736x/61/d5/78/61d5781af388496a9bffcc69515071c6.jpg" alt="">
+            <h3>Paneer Toofani</h3>
+            <div class="price">Rs. 255</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+
+        <div class="box" data-aos="fade-right">
+            <img src="https://c8.alamy.com/comp/X76Y6R/kaju-curry-X76Y6R.jpg" alt="">
+            <h3>Kaju Butter Masala</h3>
+            <div class="price">Rs. 260</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+    </div>
+    <!-- Red Gravy Sabji ends -->
+
+    <!-- Brown Gravy Sabji starts -->
+    <h1 class="heading">Brown Gravy Sabji</h1>
+
+    <div class="box-container">
+        
+        <div class="box" data-aos="fade-right">
+            <img src="https://image.shutterstock.com/image-photo/indian-food-curry-copper-brass-260nw-699241945.jpg" alt="">
+            <h3>Paneer Kadai</h3>
+            <div class="price">Rs. 250</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+        <div class="box" data-aos="fade-left">
+            <img src="https://www.spiceupthecurry.com/wp-content/uploads/2015/04/paneer-bhurji-gravy-1.jpg" alt="">
+            <h3>Paneer Bhurji</h3>
+            <div class="price">Rs. 250</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <img src="https://image.shutterstock.com/image-photo/paneer-pasanda-famous-indian-dish-260nw-1876374943.jpg" alt="">
+            <h3>Paneer Pasanda</h3>
+            <div class="price">Rs. 250</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+
+        <div class="box" data-aos="fade-right">
+            <img src="https://wallpapercave.com/wp/wp4987405.jpg" alt="">
+            <h3>Paneer Angoori</h3>
+            <div class="price">Rs. 250</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+
+        <div class="box" data-aos="fade-right">
+            <img src="https://www.spiceupthecurry.com/wp-content/uploads/2019/03/kaju-curry-recipe-500x500.jpg" alt="">
+            <h3>Kaju Curry</h3>
+            <div class="price">Rs. 260</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+    </div>
+    <!-- Brown Gravy Sabji ends -->
+
+    <!-- Green Gravy Sabji starts -->
+    <h1 class="heading">Green Gravy Sabji</h1>
+
+    <div class="box-container">
+        
+        <div class="box" data-aos="fade-right">
+            <img src="https://image.shutterstock.com/image-photo/palak-paneer-curry-made-spinach-260nw-620912093.jpg" alt="">
+            <h3>Palak Paneer</h3>
+            <div class="price">Rs. 250</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <img src="https://img-global.cpcdn.com/recipes/b6c34249c5b1005b/751x532cq70/veg-hyderabadi-recipe-main-photo.jpg" alt="">
+            <h3>Veg. Hyderabadi</h3>
+            <div class="price">Rs. 230</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+
+        <div class="box" data-aos="fade-right">
+            <img src="https://image.shutterstock.com/image-photo/palak-corn-indian-main-course-260nw-1779972806.jpg" alt="">
+            <h3>Palak Corn Capsicum</h3>
+            <div class="price">Rs. 230</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+    </div>
+    <!-- Green Gravy Sabji ends -->
+
+    <!-- White Gravy Sabji starts -->
+    <h1 class="heading">White Gravy Sabji</h1>
+
+    <div class="box-container">
+        
+        <div class="box" data-aos="fade-right">
+            <img src="https://www.spiceupthecurry.com/wp-content/uploads/2014/11/restaurant-style-khoya-kaju-recipe-10-500x500.jpg" alt="">
+            <h3>Khoya Kaju</h3>
+            <div class="price">Rs. 275</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+        <div class="box" data-aos="fade-left">
+            <img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/Preeti_Tamilarasan/Navratan_Korma.jpg" alt="">
+            <h3>Navratna Korma</h3>
+            <div class="price">Rs. 240</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+    </div>
+    <!-- White Gravy Sabji ends -->
+    
+    <!-- Tandoor Se.. Roti starts -->
+    <h1 class="heading">Tandoor Se.. Roti</h1>
+
+    <div class="box-container">
+        
+        <div class="box" data-aos="fade-right">
+            <img src="https://ratlamee.com/wp-content/uploads/2018/10/tandoori-butter-roti.png" alt="">
+            <h3>Butter Roti</h3>
+            <div class="price">Rs. 30</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+        <div class="box" data-aos="fade-left">
+            <img src="https://image.shutterstock.com/image-photo/indian-naan-bread-garlic-butter-260nw-1448128376.jpg" alt="">
+            <h3>Butter Naan</h3>
+            <div class="price">Rs. 60</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+
+        <div class="box" data-aos="fade-right">
+            <img src="https://media.istockphoto.com/photos/famous-asian-flat-bread-known-as-parathas-picture-id618764348?k=6&m=618764348&s=612x612&w=0&h=T-pEm4jUeRjAwBqtb64fjEtk8QD1u7br-6uMZmrdcAY=" alt="">
+            <h3>Butter Paratha</h3>
+            <div class="price">Rs. 60</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+        <div class="box" data-aos="fade-left">
+            <img src="https://cdn2.foodviva.com/static-content/food-images/north-indian-recipes/plain-butter-kulcha/plain-butter-kulcha.jpg" alt="">
+            <h3>Butter Kulcha</h3>
+            <div class="price">Rs. 60</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+    </div>
+    <!-- Tandoor Se.. Roti ends -->
+
+    <!-- Dal starts -->
+    <h1 class="heading">Dal</h1>
+
+    <div class="box-container">
+        
+        <div class="box" data-aos="fade-right">
+            <img src="https://www.cookforindia.com/wp-content/uploads/2016/05/Dal-Fry.jpg" alt="">
+            <h3>Dal Fry</h3>
+            <div class="price">Rs. 140</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+        <div class="box" data-aos="fade-left">
+            <img src="https://image.shutterstock.com/image-photo/indian-popular-food-dal-tadka-260nw-1193208301.jpg" alt="">
+            <h3>Dal Tadka</h3>
+            <div class="price">Rs. 150</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+    </div>
+    <!-- Dal ends -->
+
+    <!-- Rice & Biryani starts -->
+    <h1 class="heading">Rice & Biryani</h1>
+
+    <div class="box-container">
+        
+        <div class="box" data-aos="fade-right">
+            <img src="https://somethingscookingwithalpa.com/wp-content/uploads/2017/04/0100_JeeraRice_WEB.jpg" alt="">
+            <h3>Jeera Rice</h3>
+            <div class="price">Rs. 120</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+        <div class="box" data-aos="fade-left">
+            <img src="https://image.shutterstock.com/image-photo/vegetable-biryani-pulao-260nw-377926726.jpg" alt="">
+            <h3>Veg. Biryani</h3>
+            <div class="price">Rs. 185</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+
+        <div class="box" data-aos="fade-left">
+            <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2018/07/Vegetable-Dum-Biryani-recipe.jpg" alt="">
+            <h3>Hyderabadi Biryani</h3>
+            <div class="price">Rs. 190</div>
+            <input type="button" value="Add To Cart" class="btn">
+        </div>
+    
+    </div>
+    <!-- Rice & Biryani ends -->
+
+</section>
+    
+<!-- fixed meal section for indian main course ends -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Contact info</h3>
+            
+            <p> <i class="fas fa-phone"></i> +91-9909909409 </p>
+            <p> <i class="fas fa-phone"></i> +91-9558344333 </p>
+        </div>
+
+        <div class="box">
+            <h3>Branch Location</h3>
+            <a href="#"> <a href="https://www.google.com/maps/place/Honest/@23.0855149,72.4904403,17z/data=!3m1!4b1!4m5!3m4!1s0x395e9ce8e16a6569:0xbfe549ab0ca6a3fb!8m2!3d23.08551!4d72.492629?hl=en"> Bhadaj </a></a>
+            <a href="#"> <a href="https://www.google.com/maps/place/Honest/@23.0501644,72.498898,17z/data=!3m1!4b1!4m5!3m4!1s0x395e9b4edd47f3d1:0x5d848dc6a8e30451!8m2!3d23.0501595!4d72.5010867?hl=en"> Thaltej </a></a>
+        </div>
+
+        <div class="box">
+            <h3>Follow Us</h3>
+            <a href="#"> <a href="https://m.facebook.com/honestsciencecitybhadaj/"> Facebook</a></a>
+            <a href="#"> <a href="https://www.instagram.com/honestofficialindia/?igshid=1m06szgvvmaiu"> Instagram</a></a>
+        </div>
+
+        <div class="box">
+            <h3>Business Hours</h3>
+            <p> Sun : 11:00 AM to 2:00 AM </p>
+            <p> Mon : 11:00 AM to 2:00 AM </p>
+            <p> Tues : 11:00 AM to 2:00 AM </p>
+            <p> Wed : 11:00 AM to 2:00 AM </p>
+            <p> Thur : 11:00 AM to 2:00 AM </p>
+            <p> Fri : 11:00 AM to 2:00 AM </p>
+            <p> Sat : 11:00 AM to 2:00 AM </p>
+        </div>
+
+    </div>
+
+    <h1 class="credit">Copyright ©2021 All Right & Reserved by : Honest   <br>   Developed by :  <a href="#"><a href="https://www.instagram.com/stellar_prachi/">Prachi Patel</a> </a></h1>
+    
+
+</div>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- aos js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/../restaurant-script.js"></script>
+
+<!-- initializing aos  -->
+
+<script>
+
+    AOS.init({
+        delay:400,
+        duration:1000
+    })
+
+</script>
+
+</body>
+</html>
